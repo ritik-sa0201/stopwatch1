@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #2f2c2c;
+    font-family: "Codystar", sans-serif;
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2c2c;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Codystar", sans-serif;
+}
+
+#maincon {
+    height: 514px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#maincon1 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    height: 503px;
+    width: 19%;
+    border-radius: 20px;
+    background-color: rgba(35, 13, 59, 0.5);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.counter {
+    height: 130px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 61px;
+    color: rgb(255, 255, 255);
+    font-family: "Codystar", sans-serif;
+    font-weight: 700;
+}
+
+.buttons {
+    height: 200px;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stamps {
+    height: 157px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+.btn {
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    background: radial-gradient(circle, #96E1DB, #4C9EB0);
+    font-family: "Codystar", sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+
+#cleartime {
+    transform: translate(60px, 0px);
+}
+
+#info {
+    transform: translate(-10px, -5px);
+}
+
+.stampscon {
+    transform: translate(10px, 0px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-rows: min-content;
+    gap: 14px;
+    max-height: 121px;
+    overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+    .box1 {
+        width: 40%;
+        height: 400px;
+    }
+
+    .buttons {
+        padding-left: 20px;
+        gap: 15px;
+    }
+
+    .counter {
+        font-size: 50px;
+    }
+
+    .stamps {
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 30px;
+    }
+
+    .box1 {
+        width: 60%;
+        height: 300px;
+    }
+
+    .buttons {
+        padding-left: 10px;
+        gap: 10px;
+    }
+
+    .counter {
+        font-size: 40px;
+    }
+
+    .stamps {
+        height: 120px;
+    }
+    
+    .stampscon {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .box1 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .counter {
+        font-size: 30px;
+    }
+
+    .stamps {
+        height: 100px;
+    }
+
+    .stampscon {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+
+    #info {
+        transform: translate(-5px, -2px);
+    }
+}
